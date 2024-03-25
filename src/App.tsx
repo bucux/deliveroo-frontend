@@ -2,10 +2,10 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import axios from 'axios'
-import Header from './comps/header'
-import Footer from './comps/footer'
-import Section1 from './comps/section1'
+import Header from './comps/blocs/header'
+import Footer from './comps/blocs/footer'
 import { Tdatas } from './libs/type'
+import Middle from './comps/blocs/middle'
 
 function App() {
 
@@ -21,7 +21,7 @@ function App() {
       const response = await axios.get(url)
       // console.log(response.data)
       setDatas(response.data)
-      console.log(response.data.header.title)
+      // console.log(response.data.header.title)
     }catch(error){
       if (error instanceof Error) {
         console.log(error.message)
@@ -37,7 +37,7 @@ function App() {
     <div className='app-cont0'>
       <p>{datas?.header.title}</p>
       <Header/>
-      <Section1/>
+      <Middle/>
       <Footer/>
     </div>
   )
