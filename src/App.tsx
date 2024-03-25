@@ -13,7 +13,12 @@ function App() {
 
   const fetchData = async() => {
     try{
-      const response = await axios.get('http://127.0.0.1:3200')
+      const url = window.location.hostname === "localhost" || window.location.hostname.startsWith("127.0.0.1") 
+        ?
+        'http://127.0.0.1:3200' 
+        :
+        'https://site--bonus-version--bb5k82pfcwdc.code.run/' // url de northflank
+      const response = await axios.get(url)
       // console.log(response.data)
       setDatas(response.data)
       console.log(response.data.header.title)
