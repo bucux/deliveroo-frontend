@@ -3,7 +3,7 @@ import { Titem } from '../../libs/type'
 import Button3 from '../buttons/button3'
 import './css/article2.css'
 
-export default function Article2({item} : {item : Titem}) {
+export default function Article2({item, panier, setPanier} : {item : Titem, panier : Titem[] | [], setPanier : (panier : Titem[] | []) => void}) {
 
   return (
     <div className='article2-cont0'>
@@ -18,7 +18,7 @@ export default function Article2({item} : {item : Titem}) {
         :
         null
       }
-      <Button3/>
+      <Button3 item = {item} panier={panier} setPanier={setPanier}/>
     </div>
   )
 }

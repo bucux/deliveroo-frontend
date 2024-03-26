@@ -6,6 +6,23 @@
   gap: 20px;
 }
 
+.panier-cont1{
+  border-bottom: solid 1px var(--greyTrait);
+  padding-bottom: 20px;
+}
+
+.panier-cont2{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.panier-cont3{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .panier-total{
   display: flex;
   justify-content: space-between;
@@ -17,3 +34,13 @@
   color: white;
   height: 50px;
 }
+
+#panier-vide{
+  width: 100%;
+  text-align: center;
+}
+
+.total-general{
+  font-weight: 600;
+}
+

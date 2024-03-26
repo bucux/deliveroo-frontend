@@ -11,5 +11,6 @@
 .head3-cont0 .centreur{
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 

@@ -34,6 +34,8 @@ export type Titem = {
   description: string, 
   price: Tprice,
   image: Timage,
+  qte?: number,
+  total?: number
 }
 
 export type Trestaurant = {

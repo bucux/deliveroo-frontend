@@ -1,13 +1,13 @@
 
 
 import { useEffect, useState } from 'react'
-import { Tdatas, TsectionData } from '../../libs/type'
+import { Tdatas, Titem, TsectionData } from '../../libs/type'
 import './css/middle.css'
 import Panier from './panier'
 import Section1 from './section1'
 import Section3 from './section3'
 
-export default function Middle({datas} : {datas : Tdatas}) {
+export default function Middle({datas, panier, setPanier} : {datas : Tdatas, panier: Titem[] | [], setPanier: (panier : Titem[] | []) => void}) {
 
   const [section2Data, setSection2Data] = useState<TsectionData>() // il n'y a que 1 sectionData pour lunique section 2
   const [section3Datas, setSection3Datas] = useState<TsectionData[]>([]) // tandis qu'il y a un tableau de sectionDatas pour les section 3
@@ -46,10 +46,10 @@ export default function Middle({datas} : {datas : Tdatas}) {
           <div className='middle-cont1'>
             <Section1/>
             {/* <Section2 sectionDatas={section2Data}/> */}
-            {section3Datas.map((section3Data, index)=><Section3 key={index} sectionDatas={section3Data}/>)}
+            {section3Datas.map((section3Data, index)=><Section3 key={index} sectionDatas={section3Data} panier={panier} setPanier={setPanier}/>)}
           </div>
           <div className='middle-cont2'>
-            <Panier/>
+            <Panier panier={panier} setPanier={setPanier}/>
           </div>
         </div>
       </div>
