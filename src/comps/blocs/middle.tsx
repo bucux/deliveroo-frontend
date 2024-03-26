@@ -10,7 +10,7 @@ import Section3 from './section3'
 
 export default function Middle({datas} : {datas : Tdatas}) {
 
-  const [section2Datas, setSection2Datas] = useState<TsectionData[]>([])
+  // const [section2Datas, setSection2Datas] = useState<TsectionData[]>([])
   const [section3Datas, setSection3Datas] = useState<TsectionData[]>([])
 
   const initSection3Datas = () => {
