@@ -19,9 +19,7 @@ function App() {
         :
         'https://site--bonus-version--bb5k82pfcwdc.code.run/' // url de northflank
       const response = await axios.get(url)
-      // console.log(response.data)
       setDatas(response.data)
-      // console.log(response.data.header.title)
     }catch(error){
       if (error instanceof Error) {
         console.log(error.message)
@@ -34,12 +32,16 @@ function App() {
   }, [])
 
   return (
-    <div className='app-cont0'>
-      <p>{datas?.header.title}</p>
-      <Header/>
-      <Middle/>
-      <Footer/>
-    </div>
+    datas
+      ?
+      <div className='app-cont0'>
+        <Header datas={datas}/>
+        <Middle datas={datas}/>
+        <Footer/>
+        <p>{datas.header.title}</p>
+      </div>
+      :
+      null
   )
 }
 

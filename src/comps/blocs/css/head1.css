@@ -1,4 +1,21 @@
 
 .head1-cont0{
+  display: flex;
+  justify-content: center;
   border-bottom: solid 1px var(--greyTrait);
+  padding: 12px 0;
+}
+
+.head1-cont0 .centreur{
+  display: flex;
+  justify-content: space-between;
+}
+
+.head1-cont1 {
+  display: flex;
+  gap: 10px;
+}
+
+.head1-cont0 input{
+  width: 30%;
 }

@@ -1,0 +1,30 @@
+
+
+.article2-cont0{
+  display: flex;
+  gap: 10px;
+  background-color: white;
+  min-width: 355px;
+  max-width: 400px;
+  max-height: 140px;
+  padding: 20px;
+}
+
+.article2-cont0 img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.article2-cont1 {
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.article2-description {
+  height: 33px;
+  overflow: hidden;
+}

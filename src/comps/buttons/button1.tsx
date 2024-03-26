@@ -3,8 +3,8 @@
 
 import './css/button1.css'
 
-export default function Button1() {
+export default function Button1({value}: {value : string}) {
   return (
-    <div>button1</div>
+    <button className='button1'>{value}</button>
   )
 }

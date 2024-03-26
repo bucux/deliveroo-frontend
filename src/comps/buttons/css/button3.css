@@ -1,0 +1,12 @@
+
+.button3{
+  height: 100px;
+  width: 45px;
+  color: var(--green);
+  font-size: 30px;
+  background-color: white;
+  border-width: 1px;
+  border-color: var(--greyTrait);
+  border-style: solid;
+  border-radius: 5px;
+}

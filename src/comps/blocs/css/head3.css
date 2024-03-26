@@ -1,0 +1,15 @@
+
+
+
+.head3-cont0{
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 1px var(--greyTrait);
+  padding: 12px 0;
+}
+
+.head3-cont0 .centreur{
+  display: flex;
+  justify-content: space-between;
+}
+

@@ -1,0 +1,23 @@
+
+.head2-cont0{
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 1px var(--greyTrait);
+  padding: 12px 0;
+}
+
+.head2-cont0 .centreur{
+  display: flex;
+  justify-content: space-between;
+}
+
+.head2-cont111 {
+  display: flex;
+}
+
+#image-principale{
+  object-fit: cover;
+  width: 30%;
+  height: 250px;
+  border-radius: 5px;
+}
