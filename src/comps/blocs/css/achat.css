@@ -1,0 +1,12 @@
+
+
+.achat-cont0{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.achat-cont0 .designation{
+  width: 100%;
+}

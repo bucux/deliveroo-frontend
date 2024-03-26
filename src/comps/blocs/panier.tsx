@@ -1,6 +1,7 @@
 
 
 
+import Achat from './achat'
 import './css/panier.css'
 
 export default function Panier() {
@@ -8,6 +9,7 @@ export default function Panier() {
     <div className='panier-cont0'>
       <button id="button-valider">Valider mon panier</button>
       <div className='panier-cont1'>
+        <Achat/>
         //map liste
       </div>
       <div className='panier-cont2'>
