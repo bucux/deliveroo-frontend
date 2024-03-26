@@ -2,6 +2,7 @@
 
 
 import { Theader } from '../../libs/type'
+import Button2 from '../buttons/button2'
 import './css/head2.css'
 
 export default function Head2({header} : {header : Theader}) {
@@ -21,11 +22,11 @@ export default function Head2({header} : {header : Theader}) {
         </div>
         <div className='head2-cont2'>
           <div className='head2-cont21'>
-            <img src={''} alt="icone transport" />
+            <img src={''} alt="transport" />
             <p>Livrée dans 15 - 25min</p>
-            <button>Modifier</button>
+            <Button2 name={'Modifier'}/>
           </div>
-          <button>Démarrer une commande groupée</button>
+          <button id="button-groupe">Démarrer une commande groupée</button>
         </div>
       </div>
     </div>

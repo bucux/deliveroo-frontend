@@ -19,3 +19,8 @@
 .head1-cont0 input{
   width: 30%;
 }
+
+.head1-cont0 img{
+  width: 130px;
+  object-fit: cover;
+}

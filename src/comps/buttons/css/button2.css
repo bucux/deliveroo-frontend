@@ -1,4 +1,17 @@
 
 .button2{
   color: var(--green);
+  text-wrap: nowrap;
+  height: 25px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-style: none;
+  background-color: white;
+}
+
+.button2:hover{
+  background-color: var(--green);
+  color: white;
+  border-radius: 10px;
 }

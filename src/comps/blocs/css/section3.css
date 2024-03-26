@@ -1,14 +1,8 @@
 
 .section3-cont0{
   display: flex;
-  justify-content: center;
-  padding: 12px 0;
-}
-
-.section3-cont0 .centreur{
-  display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
 .section3-cont1{
@@ -16,4 +10,8 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
+}
+
+.section3-cont0 h2 {
+  margin-top: 10px;
 }

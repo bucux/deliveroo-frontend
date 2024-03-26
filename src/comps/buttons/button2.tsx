@@ -1,10 +1,15 @@
 
 
-import { Tcategorie } from '../../libs/type'
+
 import './css/button2.css'
 
-export default function Button2(props : Tcategorie) {
+export default function Button2({name, id} : {name: string, id?: string}) {
+
+  const clic = () => {
+    console.log(id)
+  }
+
   return (
-    <div className='button2'>{props.name}</div>
+    <button className='button2' onClick={clic}>{name}</button>
   )
 }

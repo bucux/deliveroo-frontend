@@ -4,6 +4,13 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-top: 20px;
+}
+
+.middle-cont0 .centreur{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .middle-cont1{

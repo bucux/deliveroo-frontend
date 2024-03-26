@@ -1,0 +1,19 @@
+
+
+.panier-cont0{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.panier-total{
+  display: flex;
+  justify-content: space-between;
+}
+
+#button-valider{
+  border-style: none;
+  background-color: var(--green);
+  color: white;
+  height: 50px;
+}
